@@ -1,4 +1,114 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://enricobolzonello.github.io/blog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Enrico Bolzonello'
 theme = 'PaperMod'
+
+enableGitInfo = true
+enableEmoji=true
+enableRobotsTXT=true
+
+[menus]
+  [[menus.main]]
+    name = 'Archive'
+    pageRef = '/archives'
+    weight = 10
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 20
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 30
+  [[menus.main]]
+    name = 'Search'
+    pageRef = '/search'
+    weight = 40
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "Enrico Bolzonello Blog"
+  description = "Blog and Personal Website"
+  keywords = ["Blog", "Portfolio", "Enrico", "Bolzonello"]
+  author = "Enrico Bolzonello"
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"  
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = true
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.profileMode]
+    enabled = false  # needs to be explicitly set
+    title = "ExampleSite"
+    subtitle = "This is subtitle"
+    imageUrl = "<img location>"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "my image"
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "posts"
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "tags"
+
+  [params.homeInfoParams]
+    Title = "Hi there, I'm Enrico 👋"
+    Content = "Welcome to my blog. I'm a MSc student in Computer Engineering @ UniPD, currently doing an Internship in Software engineering at Unox and about to start my thesis in Big Data algorithms. Learn more about me in the **About** section"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/enricobolzonello"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/enrico-bolzonello/"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:enribolzonello@gmail.com"
+
+  [params.cover]
+    hidden = true  # hide everywhere but not in structured data
+    hiddenInList = true  # hide on list pages and home
+    hiddenInSingle = true  # hide on single page
+
+  [params.editPost]
+    URL = "https://github.com/enricobolzonello/blog/tree/main/content"
+    Text = "Suggest Changes"  # edit text
+    appendFilePath = true  # to append file path to Edit link
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    limit = 10  # refer: https://www.fusejs.io/api/methods.html#search
+    keys = ["title", "permalink", "summary", "content"]
+
+pygmentsUseClasses = true
+
+[markup.highlight]
+  noClasses = false
+  # anchorLineNos = true
+  # codeFences = true
+  # guessSyntax = true
+  # lineNos = true
+  # style = "monokai"
+
