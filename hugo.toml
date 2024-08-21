@@ -54,6 +54,7 @@ enableRobotsTXT=true
   showtoc = true
   tocopen = false
   math = true
+  canonifyURL = true
 
   [params.homeInfoParams]
     Title = "Hi there, I'm Enrico 👋"
