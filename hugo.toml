@@ -17,7 +17,7 @@ enableRobotsTXT=true
     pageRef = '/tags'
     weight = 20
   [[menus.main]]
-    name = 'About'
+    name = 'About me'
     pageRef = '/about'
     weight = 30
   [[menus.main]]
@@ -53,21 +53,7 @@ enableRobotsTXT=true
   hideSummary = false
   showtoc = true
   tocopen = false
-
-  [params.profileMode]
-    enabled = false  # needs to be explicitly set
-    title = "ExampleSite"
-    subtitle = "This is subtitle"
-    imageUrl = "<img location>"
-    imageWidth = 120
-    imageHeight = 120
-    imageTitle = "my image"
-    [[params.profileMode.buttons]]
-      name = "Posts"
-      url = "posts"
-    [[params.profileMode.buttons]]
-      name = "Tags"
-      url = "tags"
+  math = true
 
   [params.homeInfoParams]
     Title = "Hi there, I'm Enrico 👋"
@@ -112,3 +98,16 @@ pygmentsUseClasses = true
   # lineNos = true
   # style = "monokai"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
