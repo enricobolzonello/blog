@@ -2,61 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-08-21T23:12:25+02:00</lastmod>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/mandelbrot/</loc>
-    <lastmod>2024-08-21T23:12:25+02:00</lastmod>
+    <loc>//localhost:1313/tags/mandelbrot/</loc>
+    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/mandelbrot-in-rust-wasm/</loc>
-    <lastmod>2024-08-21T23:12:25+02:00</lastmod>
+    <loc>//localhost:1313/posts/mandelbrot-in-rust-wasm/</loc>
+    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/</loc>
-    <lastmod>2024-08-21T23:12:25+02:00</lastmod>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/rust/</loc>
-    <lastmod>2024-08-21T23:12:25+02:00</lastmod>
+    <loc>//localhost:1313/tags/rust/</loc>
+    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
-    <lastmod>2024-08-21T23:12:25+02:00</lastmod>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/wasm/</loc>
-    <lastmod>2024-08-21T23:12:25+02:00</lastmod>
+    <loc>//localhost:1313/tags/wasm/</loc>
+    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/my-first-post/</loc>
-    <lastmod>2024-08-20T15:06:54+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/blog/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2024-08-20T21:50:54+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/archives/</loc>
+    <loc>//localhost:1313/archives/</loc>
     <lastmod>2024-08-20T21:50:54+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/search/</loc>
+    <loc>//localhost:1313/search/</loc>
     <lastmod>2024-08-20T21:50:54+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -2,32 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Enrico Bolzonello</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Enrico Bolzonello</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Aug 2024 23:12:25 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Aug 2024 16:35:14 +0200</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mandelbrot Set Viewer in Rust and Wasm</title>
-      <link>http://localhost:1313/blog/posts/mandelbrot-in-rust-wasm/</link>
+      <link>//localhost:1313/posts/mandelbrot-in-rust-wasm/</link>
       <pubDate>Tue, 20 Aug 2024 22:18:56 +0200</pubDate>
-      <guid>http://localhost:1313/blog/posts/mandelbrot-in-rust-wasm/</guid>
+      <guid>//localhost:1313/posts/mandelbrot-in-rust-wasm/</guid>
       <description>Exploring the Mandelbrot Set with an implementation in Rust, Wasm and Typescript</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/blog/posts/my-first-post/</link>
-      <pubDate>Tue, 20 Aug 2024 15:00:02 +0200</pubDate>
-      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
-    </item>
-    <item>
       <title>About</title>
-      <link>http://localhost:1313/blog/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description></description>
     </item>
   </channel>
