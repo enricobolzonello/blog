@@ -3,37 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
+    <lastmod>2024-08-22T16:48:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1313/tags/mandelbrot/</loc>
-    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
+    <lastmod>2024-08-22T16:48:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1313/posts/mandelbrot-in-rust-wasm/</loc>
-    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
+    <lastmod>2024-08-22T16:48:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
+    <lastmod>2024-08-22T16:48:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1313/tags/rust/</loc>
-    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
+    <lastmod>2024-08-22T16:48:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
-    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
+    <lastmod>2024-08-22T16:48:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>//localhost:1313/tags/wasm/</loc>
-    <lastmod>2024-08-22T16:35:14+02:00</lastmod>
+    <lastmod>2024-08-22T16:48:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -51,8 +51,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>//localhost:1313/projects/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>//localhost:1313/search/</loc>
     <lastmod>2024-08-20T21:50:54+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>//localhost:1313/projects/travelling-salesman-optimization/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

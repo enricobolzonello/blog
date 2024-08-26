@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://enricobolzonello.github.io/blog/'
 languageCode = 'en-us'
 title = 'Enrico Bolzonello'
 theme = 'PaperMod'
@@ -12,18 +12,22 @@ enableRobotsTXT=true
     name = 'Archive'
     pageRef = '/archives'
     weight = 10
+
   [[menus.main]]
     name = 'Tags'
     pageRef = '/tags'
     weight = 20
+
   [[menus.main]]
     name = 'About me'
     pageRef = '/about'
-    weight = 30
-  [[menus.main]]
-    name = 'Search'
-    pageRef = '/search'
     weight = 40
+
+  [[menus.main]]
+    name = 'Projects'
+    url = '/projects/'
+    weight = 30
+
 
 [minify]
   disableXML = true
