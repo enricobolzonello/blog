@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Enrico Bolzonello</title>
-    <link>//localhost:1313/tags/</link>
+    <link>http://localhost:1313/blog/tags/</link>
     <description>Recent content in Tags on Enrico Bolzonello</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Aug 2024 16:48:27 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mandelbrot</title>
-      <link>//localhost:1313/tags/mandelbrot/</link>
+      <link>http://localhost:1313/blog/tags/mandelbrot/</link>
       <pubDate>Tue, 20 Aug 2024 22:18:56 +0200</pubDate>
-      <guid>//localhost:1313/tags/mandelbrot/</guid>
+      <guid>http://localhost:1313/blog/tags/mandelbrot/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>//localhost:1313/tags/rust/</link>
+      <link>http://localhost:1313/blog/tags/rust/</link>
       <pubDate>Tue, 20 Aug 2024 22:18:56 +0200</pubDate>
-      <guid>//localhost:1313/tags/rust/</guid>
+      <guid>http://localhost:1313/blog/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Wasm</title>
-      <link>//localhost:1313/tags/wasm/</link>
+      <link>http://localhost:1313/blog/tags/wasm/</link>
       <pubDate>Tue, 20 Aug 2024 22:18:56 +0200</pubDate>
-      <guid>//localhost:1313/tags/wasm/</guid>
+      <guid>http://localhost:1313/blog/tags/wasm/</guid>
       <description></description>
     </item>
   </channel>

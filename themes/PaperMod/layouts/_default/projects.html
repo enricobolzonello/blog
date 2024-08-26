@@ -4,7 +4,8 @@
   <h1 class="hero-title">
     Projects
   </h1>
-    <img src="/star-2.svg" loading="lazy" class="hero-star">
+  {{ $asset := resources.Get "/star-2.svg" }}
+    <img src="{{ $asset.RelPermalink }}" loading="lazy" class="hero-star">
   </div>
   <p class="hero-description">A collection of personal & university projects with different tools and scopes, but all made with 💜.</p>
 </div>
@@ -18,7 +19,8 @@
         <p class="item-description">{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
       </div>
       <div class="item-icon">
-        <img src="{{ .Params.icon }}" alt="{{ .Title }} icon">
+        {{ $asset := resources.Get .Params.icon }}
+        <img src="{{ $asset.RelPermalink }}" alt="{{ .Title }} icon">
       </div>
     </div>
   </a>
