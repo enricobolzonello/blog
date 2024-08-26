@@ -1,0 +1,187 @@
+/* Hero section */
+.hero-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    background: var(--accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-star {
+    height: auto;
+    /*transform: translateY(-20px);  /* Move down and scale to 50% */
+    transform-origin: center;  /* Ensures scaling happens from the center */
+    animation: zoomIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: translateY(-10px) translateX(-10px) scale(0);
+    }
+    to {
+      transform: translateY(-10px) translateX(-10px) scale(0.5);
+    }
+  }
+  
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Common styles for grid items */
+.grid-item {
+    background-color: var(--entry);
+    padding: var(--content-gap);
+    border-radius: var(--radius);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    transition: transform 0.1s;
+    border: 1px solid var(--border);
+}
+
+.grid-item:active {
+    transform: scale(0.96);
+}
+
+/* Regular grid item - horizontal layout */
+.grid-item-regular {
+    flex-direction: row;
+}
+
+.grid-item-regular .item-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.grid-item-regular .item-text {
+    flex: 2;
+}
+
+.grid-item-regular .item-icon {
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 1;
+    margin-left: 1rem;
+    background-color: var(--tertiary);
+}
+
+.grid-item-regular .item-icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    scale: 80%;
+}
+
+/* Tall grid item - vertical layout */
+.grid-item-tall {
+    grid-row: span 2;
+    flex-direction: column;
+}
+
+.grid-item-tall .item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-tall .item-text {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.grid-item-tall .item-icon {
+    margin: 0;
+}
+
+.grid-item-tall .item-icon img {
+    object-fit: contain;
+}
+
+/* Hover effect */
+@media (hover: hover) {
+
+    .grid-item:hover {
+        border-radius: var(--radius);
+        border-image-source: var(--accent);
+        border-image-slice: 1;
+    }
+}
+
+.item-title {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.item-description {
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+    }
+
+    .grid-item {
+        /* Reset hover styles on mobile */
+        border-radius: var(--radius);
+        border-image-source: none;
+        border-image-slice: 0;
+    }
+
+    .grid-item-tall {
+        grid-row: span 1;
+        /* Prevent the tall card from spanning two rows */
+        height: auto;
+        /* Adjust height to fit the content */
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}

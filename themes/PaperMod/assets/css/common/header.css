@@ -1,0 +1,165 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    line-height: var(--header-height);
+}
+
+.nav a {
+    display: block;
+}
+
+.logo,
+#menu {
+    display: flex;
+    margin: auto var(--gap);
+}
+
+#menu a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+#menu a::before,
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+#menu a::before {
+    background: var(--accent);
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#menu a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    background: var(--accent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#menu a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+#menu a:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+#menu a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#menu a:hover span {
+    transform: translate3d(-200%, 0, 0);
+}
+
+
+.logo {
+    flex-wrap: inherit;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo a img,
+.logo a svg {
+    display: inline;
+    vertical-align: middle;
+    pointer-events: none;
+    transform: translate(0, -10%);
+    border-radius: 6px;
+    margin-inline-end: 8px;
+}
+
+button#theme-toggle {
+    font-size: 26px;
+    margin: auto 4px;
+}
+
+body.dark #moon {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.dark) #sun {
+    display: none;
+}
+
+#menu {
+    list-style: none;
+    word-break: keep-all;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#menu li+li {
+    margin-inline-start: var(--gap);
+}
+
+#menu a {
+    font-size: 16px;
+}
+
+#menu .active {
+    font-weight: 500;
+    position: relative;
+    background: var(--accent);  
+    -webkit-background-clip: text;  
+    background-clip: text;
+    color: transparent;  
+    transition: none;
+}
+
+#menu .active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: var(--accent); 
+    transition: none;
+}
+
+.lang-switch li,
+.lang-switch ul,
+.logo-switches {
+    display: inline-flex;
+    margin: auto 4px;
+}
+
+.lang-switch {
+    display: flex;
+    flex-wrap: inherit;
+}
+
+.lang-switch a {
+    margin: auto 3px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.logo-switches {
+    flex-wrap: inherit;
+}

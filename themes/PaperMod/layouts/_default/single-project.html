@@ -1,0 +1,62 @@
+{{- define "main" }}
+
+<article class="project-single">
+    <header class="project-header">
+        <p class="project-category"> {{ range .Params.category }}{{ . }}{{ if not (eq . (index $.Params.technologies (sub (len
+            $.Params.category) 1))) }} • {{ end }}{{ end }}</p>
+        <h1 class="project-title entry-hint-parent">
+            {{ .Title }}
+        </h1>
+        {{- if .Description }}
+        <div class="project-description">
+            {{ .Description }}
+        </div>
+        {{- end }}
+
+        <div class="project-meta">
+            <div class="project-details">
+                <div class="project-client">
+                    <h3>Client</h3>
+                    <p>{{ .Params.client }}</p>
+                </div>
+                <div class="project-technologies">
+                    <h3>Technologies</h3>
+                    <p>{{ range .Params.technologies }}{{ . }}{{ if not (eq . (index $.Params.technologies (sub (len
+                        $.Params.technologies) 1))) }}, {{ end }}{{ end }}</p>
+                </div>
+            </div>
+
+            {{ if .Params.link }}
+            <a href="{{ .Params.link }}" class="project-link">Open Project →</a>
+            {{ end }}
+        </div>
+    </header>
+    {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+
+    {{- if .Content }}
+    <div class="project-content">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+        {{- partial "anchored_headings.html" .Content -}}
+        {{- else }}{{ .Content }}{{ end }}
+    </div>
+    {{- end }}
+
+    <footer class="project-footer">
+        {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+        <ul class="project-tags">
+            {{- range ($.GetTerms $tags) }}
+            <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+            {{- end }}
+        </ul>
+        {{- if (.Param "ShowPostNavLinks") }}
+        {{- partial "post_nav_links.html" . }}
+        {{- end }}
+        {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+        {{- partial "share_icons.html" . -}}
+        {{- end }}
+    </footer>
+
+</article>
+
+{{- end }}{{/* end main */}}

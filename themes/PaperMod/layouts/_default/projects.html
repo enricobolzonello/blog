@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="hero-section">
+  <div class="hero-content">
+  <h1 class="hero-title">
+    Projects
+  </h1>
+    <img src="/star-2.svg" loading="lazy" class="hero-star">
+  </div>
+  <p class="hero-description">A collection of personal & university projects with different tools and scopes, but all made with 💜.</p>
+</div>
+
+<div class="grid-container">
+  {{ range where .Site.Pages "Section" "projects" }}
+  <a href="{{ .Permalink }}" class="grid-item {{ if eq .Params.cardHeight "tall" }}grid-item-tall{{ else }}grid-item-regular{{ end }}">
+    <div class="item-content">
+      <div class="item-text">
+        <h2 class="item-title">{{ .Title }}</h2>
+        <p class="item-description">{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+      </div>
+      <div class="item-icon">
+        <img src="{{ .Params.icon }}" alt="{{ .Title }} icon">
+      </div>
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ end }}
