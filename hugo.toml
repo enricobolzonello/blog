@@ -1,4 +1,4 @@
-baseURL = 'https://enricobolzonello.github.io/blog/'
+baseURL = 'https://enricobolzonello.github.io/'
 languageCode = 'en-us'
 title = 'Enrico Bolzonello'
 theme = 'PaperMod'
