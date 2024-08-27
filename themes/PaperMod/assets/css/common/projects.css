@@ -57,7 +57,7 @@
     color: var(--primary);
     display: flex;
     align-items: center;
-    transition: transform 0.1s;
+    transition: transform 0.2s;
     border: 1px solid var(--border);
 }
 
@@ -99,6 +99,7 @@
 .grid-item-tall {
     grid-row: span 2;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 .grid-item-tall .item-content {
@@ -106,6 +107,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .grid-item-tall .item-text {
@@ -114,11 +116,22 @@
 }
 
 .grid-item-tall .item-icon {
-    margin: 0;
+    width: 85%;
+    height: 100%;
+    border-top-right-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .grid-item-tall .item-icon img {
-    object-fit: contain;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    transform-origin: top center;
 }
 
 /* Hover effect */

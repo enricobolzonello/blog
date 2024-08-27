@@ -3,7 +3,7 @@ title: "Traveling Salesman Optimization"
 category: ["Operations Research"]
 client: "University"
 technologies: ["C", "Cplex", "Make", "Gnuplot"]
-summary: Solve the TSP with different algorithms, both approximate and exact
+summary: Solve the TSP with different algorithms, both approximate and exact.
 description: "Project developed during the Operations Research 2 course in the academic year 2023/24. The aim of the project is to explore different approaches for solving the famous Travelling Salesman Problem (TSP), ranging from very approximate solutions with heuristic algorithms down to exact methods employing CPLEX MIP solver."
 link: "https://github.com/enricobolzonello/TravellingSalesmanOptimization"
 layout: single-project
