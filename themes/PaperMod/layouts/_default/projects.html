@@ -11,7 +11,10 @@
 </div>
 
 <div class="grid-container">
-  {{ range where .Site.Pages "Section" "projects" }}
+  <!-- Sort by 'priority' first, and then by 'Title' -->
+  {{ $sortedPages := sort (where .Site.Pages "Section" "projects") "Params.priority" "asc" "Title" "asc" }}
+
+  {{ range $sortedPages }}
   <a href="{{ .Permalink }}" class="grid-item {{ if eq .Params.cardHeight "tall" }}grid-item-tall{{ else }}grid-item-regular{{ end }}">
     <div class="item-content">
       <div class="item-text">

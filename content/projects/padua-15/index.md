@@ -3,12 +3,13 @@ title: "Padua15"
 category: ["Network Analysis"]
 client: "University"
 technologies: ["Python", "Open Street Maps", "NetworkX", "GeoPandas"]
-summary: Expand the 15-Minute city in Padua with network analysis tools.
+summary: Optimizing Padua's urban accessibility through 15-minute city analysis and improvement strategies using network analysis tools.
 description: "This study explores practical solutions for urban challenges arising from long journeys and uncontrolled city growth. Inspired by the 15 Minute City idea, we focus on making essential services accessible within a 15-minute walk (or bike ride) in Padua. Using a network-based approach, we analyze the current state of the city and propose ways to expand the coverage of services within this timeframe. Our goal is to create a more convenient and sustainable urban living experience, addressing issues like traffic, air quality and time waste."
 link: "https://github.com/enricobolzonello/Padua15"
 layout: single-project
 icon: "/padua15-logo.png"
 cardHeight: "tall"
+priority: 2
 ---
 
 In 1994, a physicist named Cesare Marchetti proposed theorized the Marchetti Constant [^1], which states that in general, people have been always been willing to commute for about a half-hour, one-way. The immediate consequence is that even if there is vast amount of land available, that land has no value in an urban context, unless transportation makes it quickly accessible to the urban core. With the advancement of faster modes of transport, the city boundaries exploded. The introduction of cheap cars combined with the low cost of farmland paved the way for the urban sprawl era. But this car-centric planning caused several problems including biodiversity, decrease in citizen’s quality of life caused by increased traffic congestions, low quality of air and increasing financial burdens and social inequalities.

@@ -9,4 +9,5 @@ description: "This report explains and analyzes the system developed by Team FAD
 link: "https://github.com/enricobolzonello/LongEvalRetrieval-faderic"
 layout: single-project
 icon: "/1f50d.svg"
+priority: 2
 ---

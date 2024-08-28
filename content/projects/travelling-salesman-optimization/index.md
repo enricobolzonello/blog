@@ -8,6 +8,7 @@ description: "Project developed during the Operations Research 2 course in the a
 link: "https://github.com/enricobolzonello/TravellingSalesmanOptimization"
 layout: single-project
 icon: "/1f6f5.svg"
+priority: 1
 ---
 
 The Traveling Salesman Problem (TSP) stands as one of the most renowned and extensively studied combinatorial optimization challenges in the realm of computer science, operations research, and applied mathematics. At its core, the TSP revolves around finding the shortest possible route that a salesman must take to visit a given set of cities exactly once and then return to the original city. Despite its seemingly straightforward premise, the TSP’s complexity escalates rapidly as the number of cities increases, leading to its classification as an NP-hard problem. 
